@@ -7,12 +7,8 @@ cmake_minimum_required(VERSION 3.10)
 project(fanuc_moveit_config)
 
 
-# Silence CMP0167 dev warnings from MoveIt config extras that still call
-# find_package(Boost): use Boost's own CMake config instead of the removed
-# FindBoost module.
-if(POLICY CMP0167)
-  cmake_policy(SET CMP0167 NEW)
-endif()
+# Do NOT set CMP0167 NEW here: it breaks transitive geometric_shapes →
+# random_numbers::random_numbers (classic FindBoost path used by MoveIt extras).
 
 set(CMAKE_CXX_STANDARD 17)
 
