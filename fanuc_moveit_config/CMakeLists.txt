@@ -13,6 +13,7 @@ project(fanuc_moveit_config)
 set(CMAKE_CXX_STANDARD 17)
 
 find_package(ament_cmake REQUIRED)
+find_package(random_numbers REQUIRED)
 find_package(moveit_ros_control_interface REQUIRED)
 find_package(pluginlib REQUIRED)
 

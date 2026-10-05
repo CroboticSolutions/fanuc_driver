@@ -19,6 +19,7 @@ SPDX-License-Identifier: Apache-2.0
 
   <depend>moveit_ros_control_interface</depend>
   <depend>pluginlib</depend>
+  <depend>random_numbers</depend>
 
   <exec_depend>launch</exec_depend>
   <exec_depend>launch_ros</exec_depend>
